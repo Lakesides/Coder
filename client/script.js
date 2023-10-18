@@ -114,7 +114,7 @@ form.addEventListener("keyup", (e) => {
 const toTop = document.querySelector(".to-top");
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 30) {
+    if (window.scrollY > 20) {
         toTop.classList.add("active");
     } else {
         toTop.classList.remove("active");
