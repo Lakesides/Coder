@@ -110,3 +110,16 @@ form.addEventListener("keyup", (e) => {
     handleSubmit(e);
   }
 });
+
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 30) {
+        toTop.classList.add("active");
+    } else {
+        toTop.classList.remove("active");
+    }
+})
+
+const time = document.querySelector(".time");
+
