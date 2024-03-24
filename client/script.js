@@ -111,8 +111,6 @@ form.addEventListener("keyup", (e) => {
   }
 });
 
-
-
 const cross = document.querySelector(".cross");
 const popUp = document.querySelector(".pop-upp");
 const submitBtn = document.querySelector(".submit");
