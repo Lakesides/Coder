@@ -5,27 +5,65 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coder - Your Personal AI</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="next.css">
   </head>
   <body>
 
     <header>
-      <h2><ion-icon name="logo-ionitron" id="logo"></ion-icon> <span class="logo">Coder</span></h2>
-      <nav class="navigation">
-        <h2><ion-icon name="menu-outline"></ion-icon><h2>
-      </nav>
+        <h2><span class="logo">Coder</span></h2>
+        <nav class="navigation">
+        <h2 id="button"><ion-icon name="podium"></ion-icon><h2>
+        </nav>
     </header>
 
     <div id="app">
-      <div id="chat_container">
+        <div><img src="bot.svg" alt="bot" class="img-bot"></div>
+       <span class="span">
+            <div id="span">Coder - </div>
+            <div>
+                <div class="word-list">
+                    <span>Your Personal AI</span>
+                    <span>Your Tutor AI</span>
+                    <span>Your Tech-guru AI</span>
+                    <span>Your Conversational AI</span>
+                    <span>Your Sidekick AI</span>
+                </div>
+            </div>
+        </span>
+        <span class="spans">
+            <div>Coder </div> <br>
+            <div>
+                <div class="word-list" style="text-align: center;">
+                    <span>Your Personal AI</span>
+                    <span>Your Tutor AI</span>
+                    <span>Your Tech-guru AI</span>
+                    <span>Your Conversational AI</span>
+                    <span>Your Sidekick AI</span>
+                </div>
+            </div>
+        </span>
+        <h5>Coder is a personal all-rounder artificial intelligence that can do all - from answering questions to providing information, from offering advice to completing tasks. It's the ultimate personal assistant.</h5>
+        <a href="/client/next.html"><button>Use AI</button></a>
+    </div>
+    <div class="design"></div>
+
+    <div class="pop-up">
+        <div class="pop-upp">
+            <div class="container">
+                <h2>What is Coder AI?</h2>
+                <h5>Coder AI is a personal AI that is not just limited to tech-related tasks. It's a conversational AI that is capable of providing information on a wide range of topics. In addition, Coder AI can engage in natural and human-like conversations. Its versatility and conversational abilities make it a valuable companion and assistant for users in many different fields and situation.</h5>
+                <button class="submit">Dismiss</button>
+                <div class="cross"><ion-icon name="close"></ion-icon></div>
+            </div>
+        </div>
     </div>
 
-    <form>
-      <textarea name="prompt" cols="1" rows="1" placeholder="Ask Coder..."></textarea>
-      <button type="submit"><img src="assets/send.svg" alt="svg image"></button>
-      </form>
-    </div>
-  
+    <footer>
+        <h5>Made by Henry</h5>
+    </footer>
+
+    <div class="loader"></div>
+
     <script type="module" src="script.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"></script>
