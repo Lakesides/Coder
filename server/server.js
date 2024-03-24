@@ -12,14 +12,17 @@ const openai = new OpenAI({
 const app = express(); 
 app.use(cors());
 app.use(express.json());
+app.use(express.static("public"));
 
-app.get("/next", async (req, res) => {
+app.use("/", require("client/routes/main"));
+
+app.get("/", async (req, res) => {
     res.status(200).send({
         message: "Hello from CoderAI", 
     })
 });
 
-app.post("/next", async (req, res) => {
+app.post("/", async (req, res) => {
     try {
         const prompt = req.body.prompt;
 

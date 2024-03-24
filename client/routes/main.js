@@ -1,3 +1,7 @@
+const express = require("express");
+const router = express.Router();
+
+
 import bot from "./assets/bot.svg";
 import user from "./assets/user.svg";
 
@@ -111,21 +115,12 @@ form.addEventListener("keyup", (e) => {
   }
 });
 
-const cross = document.querySelector(".cross");
-const popUp = document.querySelector(".pop-upp");
-const submitBtn = document.querySelector(".submit");
-const popupBtn = document.querySelector("#button");
+router.get("/", (req, res) => {
+    res.render("index", { 
+        title: "CoderAI - Your personal AI" });
+});
 
-cross.addEventListener("click", ()=> {
-  popUp.classList.remove("visid");
-})
-
-submitBtn.addEventListener("click", ()=> {
-  popUp.classList.remove("visid");
-})
-
-popupBtn.addEventListener("click", ()=> {
-  popUp.classList.add("visid");
-})
-
-
+router.get("/next", (req, res) => {
+    res.render("next", { 
+        title: "CoderAI - Your personal AI" });
+});
