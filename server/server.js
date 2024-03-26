@@ -26,6 +26,7 @@ app.post("/", async (req, res) => {
 
         const response = await openai.completions.create({
             model: "text-davinci-003",
+            messages: [{ role: "system", content: "Your name is Coder and you are a helpful assistant." }],
             prompt: `${prompt}`, 
             temperature: 0,
             max_tokens: 3000,

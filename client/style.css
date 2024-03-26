@@ -15,7 +15,7 @@ body {
 
 #app {
     position: relative;
-    height: 92vh;
+    height: 87vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -253,7 +253,7 @@ div.word-list {
 #app-2 {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 75vh;
   background: #343541;
   display: flex;
   flex-direction: column;
@@ -264,7 +264,7 @@ div.word-list {
 
 @media only screen and (min-width: 768px) {
   #app-2 {
-    height: 92vh;
+    height: 87vh;
   }
 }
 
