@@ -115,12 +115,30 @@ form.addEventListener("keyup", (e) => {
   }
 });
 
-router.get("/", (req, res) => {
-    res.render("index", { 
-        title: "CoderAI - Your personal AI" });
+const firstScreen = document.querySelector(".first-screen");
+const secondScreen = document.querySelector(".second-screen");
+const displayButton = document.querySelector(".display-btn");
+
+displayButton.addEventListener("click", () => {
+    firstScreen.classList.add("hidden");
+    secondScreen.classList.remove("hidden");
 });
 
-router.get("/next", (req, res) => {
-    res.render("next", { 
-        title: "CoderAI - Your personal AI" });
-});
+
+const cross = document.querySelector(".cross");
+const popUp = document.querySelector(".pop-upp");
+const submitBtn = document.querySelector(".submit");
+const popupBtn = document.querySelector("#activate-btn");
+
+cross.addEventListener("click", ()=> {
+    popUp.classList.remove("visid");
+})
+
+submitBtn.addEventListener("click", ()=> {
+    popUp.classList.remove("visid");
+})
+
+popupBtn.addEventListener("click", ()=> {
+    popUp.classList.add("visid");
+})
+
