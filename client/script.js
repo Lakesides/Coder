@@ -1,9 +1,35 @@
-const express = require("express");
-const router = express.Router();
-
-
 import bot from "./assets/bot.svg";
 import user from "./assets/user.svg";
+
+
+const firstScreen = document.querySelector(".first-screen");
+const secondScreen = document.querySelector(".second-screen");
+const displayButton = document.querySelector(".display-btn");
+
+displayButton.addEventListener("click", () => {
+    firstScreen.classList.add("hidden");
+    secondScreen.classList.remove("hidden");
+});
+
+
+const cross = document.querySelector(".cross");
+const popUp = document.querySelector(".pop-upp");
+const submitBtn = document.querySelector(".submit");
+const popupBtn = document.querySelector("#activate-btn");
+
+cross.addEventListener("click", ()=> {
+    popUp.classList.remove("visid");
+})
+
+submitBtn.addEventListener("click", ()=> {
+    popUp.classList.remove("visid");
+})
+
+popupBtn.addEventListener("click", ()=> {
+    popUp.classList.add("visid");
+})
+
+
 
 const form = document.querySelector("form");
 const chatContainer = document.querySelector("#chat_container");
@@ -114,31 +140,4 @@ form.addEventListener("keyup", (e) => {
     handleSubmit(e);
   }
 });
-
-const firstScreen = document.querySelector(".first-screen");
-const secondScreen = document.querySelector(".second-screen");
-const displayButton = document.querySelector(".display-btn");
-
-displayButton.addEventListener("click", () => {
-    firstScreen.classList.add("hidden");
-    secondScreen.classList.remove("hidden");
-});
-
-
-const cross = document.querySelector(".cross");
-const popUp = document.querySelector(".pop-upp");
-const submitBtn = document.querySelector(".submit");
-const popupBtn = document.querySelector("#activate-btn");
-
-cross.addEventListener("click", ()=> {
-    popUp.classList.remove("visid");
-})
-
-submitBtn.addEventListener("click", ()=> {
-    popUp.classList.remove("visid");
-})
-
-popupBtn.addEventListener("click", ()=> {
-    popUp.classList.add("visid");
-})
 
